@@ -31,7 +31,8 @@
     "test-only": "npm run build && jest",
     "test": "npm run test-only",
     "clean": "rimraf dist/",
-    "build": "unbuild"
+    "build": "unbuild",
+    "prepare": "npm run build"
   },
   "keywords": [
     "favicon",
