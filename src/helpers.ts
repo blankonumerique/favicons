@@ -232,7 +232,7 @@ function toRawImage(pipeline: sharp.Sharp): Promise<RawImage> {
 }
 
 function toPng(pipeline: sharp.Sharp): Promise<Buffer> {
-  return pipeline.png().toBuffer();
+  return pipeline.png({ compressionLevel: 0 }).toBuffer();
 }
 
 async function createSvg(
